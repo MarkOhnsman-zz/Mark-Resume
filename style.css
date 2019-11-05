@@ -1,7 +1,13 @@
+:root {
+  --primary: #f779b0;
+  --secondary: #2a1a5e;
+  --text-drop-shadow: 1px 1px var(--secondary);
+}
+
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 80vh;
   font-size: 18pt;
 }
 
@@ -20,9 +26,14 @@ header {
   text-align: center;
 }
 
+h1 {
+  color: var(--primary);
+}
+
 header h1 {
   border-bottom: double;
   display: inline;
+  text-shadow: var(--text-drop-shadow);
 }
 
 header ul li {
@@ -59,4 +70,24 @@ main h1 {
   main {
     max-width: unset;
   }
+}
+
+.action:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+text-primary {
+  color: var(--primary);
+}
+
+mt-1 {
+  margin-top: 1em;
+}
+
+footer {
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 1em;
 }
