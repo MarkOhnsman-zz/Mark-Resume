@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 18pt;
+}
+
+main {
+  flex-grow: 1;
+  max-width: 70vw;
+  align-self: center;
+}
+
+header,
+footer {
+  min-height: 10vh;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  border-bottom: double;
+  display: inline;
+}
+
+header ul li {
+  display: inline;
+}
+
+main h1 {
+  margin: 0;
+}
+
+#skills ul {
+  column-count: 2;
+}
+
+.job p,
+.education p {
+  margin: 0;
+}
+
+.job ul {
+  margin: 0.5em 0;
+}
+
+.job p:first-child,
+.education p:first-child {
+  margin-top: 1em;
+}
+
+/* NOTE Media Query to set properties on screen smaller than 600px wide */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16pt;
+  }
+  main {
+    max-width: unset;
+  }
+}
